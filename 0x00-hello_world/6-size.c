@@ -1,9 +1,11 @@
 #include <stdio.h>
-/** 
-  * main - show size of different data types
+
+/**
+  * main - calculate size of data types
   *
-  * Return: void
+  *Return: Void
 */
+
 int main(void)
 {
 	int iType;
@@ -12,10 +14,10 @@ int main(void)
 	char cType;
 	float fType;
 
-	printf("Size of a char: %zu byte(s)", sizeof(cType));
-	printf("Size of an int: %zu byte(s)", sizeof(iType));
-	printf("Size of a long int: %zu byte(s)", sizeof(liType));
-	printf("Size of a long long int: %zu byte(s)", sizeof(llType));
-	printf("Size of a float: %zu byte(s)", sizeof(fType));
+	printf("Size of a char: %zu byte(s)\n", sizeof(cType));
+	printf("Size of an int: %zu byte(s)\n", sizeof(iType));
+	printf("Size of a long int: %zu byte(s)\n", sizeof(liType));
+	printf("Size of a long long int: %zu byte(s)\n", sizeof(llType));
+	printf("Size of a float: %zu byte(s)\n", sizeof(fType));
 	return (0);
 }
