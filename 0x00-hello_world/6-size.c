@@ -6,11 +6,11 @@
 */
 int main(void)
 {
-	int iType
-	long int liType
-	long long int llType
-	char cType
-	float fType
+	int iType;
+	long int liType;
+	long long int llType;
+	char cType;
+	float fType;
 
 	printf("Size of a char: %zu byte(s)", sizeof(cType));
 	printf("Size of an int: %zu byte(s)", sizeof(iType));
