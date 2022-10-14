@@ -13,7 +13,7 @@ int main(void)
 	for (i = 0; i < 26; i++)
 	{
 		putchar(low_alpha[i]);
-	}	
+	}
 	for (j = 0; j < 26; j++)
 	{
 		putchar(up_alpha[j]);
