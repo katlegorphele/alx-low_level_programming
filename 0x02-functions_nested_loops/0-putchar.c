@@ -6,9 +6,10 @@
   */
 int main(void)
 {
-	char line[7] = "_putchar";
+	char line[8] = "_putchar";
+	int i;
 
-	for (int i = 0; i <= 7; i++)
+	for (i = 0; i <= 7; i++)
 		_putchar(i);
 	_putchar('\n');
 	return (0);
