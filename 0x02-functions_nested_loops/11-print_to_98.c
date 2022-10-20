@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -6,7 +5,7 @@
   * @n: holds input number
   * Return: void
   */
-void print_to_98(void)
+void print_to_98(int n)
 {
 	if (n > 98)
 	{
