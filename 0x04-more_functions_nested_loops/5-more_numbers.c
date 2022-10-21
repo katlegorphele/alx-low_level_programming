@@ -1,4 +1,4 @@
-o#include "main.h"
+#include "main.h"
 
 /**
   * more_numbers - prints the numbers 0 to 14 10x over
