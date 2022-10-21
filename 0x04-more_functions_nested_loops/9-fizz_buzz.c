@@ -12,7 +12,7 @@ int main(void)
 	int i;
 	
 	i = 1;
-	printf("%d",i);
+	printf("%d", i);
 
 	for (i = 2; i <= 100; i++)
 	{
@@ -25,5 +25,6 @@ int main(void)
 		else
 			printf(" %d", i);
 	}
+	printf("\n");
 	return (0);
 }
