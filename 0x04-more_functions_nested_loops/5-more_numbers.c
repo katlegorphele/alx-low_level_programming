@@ -1,4 +1,4 @@
-#include "main.h"
+o#include "main.h"
 
 /**
   * more_numbers - prints the numbers 0 to 14 10x over
@@ -13,9 +13,9 @@ void more_numbers(void)
 	{
 		for (j = 0; j < 15; j++)
 		{
-			_putchar(j);
+			if (j >= 10)
+				_putchar((j / 10) + 48);
+			_putchar((ch % 10) + 48);
 		}
-		_putchar ('\n');
 	}
-			
 }
