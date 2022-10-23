@@ -9,6 +9,7 @@
 int main(void)
 {
 	int i, k;
+
 	i = 48;
 	k = 48;
 
