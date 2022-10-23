@@ -1,44 +1,43 @@
 #include <stdio.h>
 
 /**
-  * main - prints all possible combos of 3 digit combos
-  *
-  * Return: 0
-  */
-
+ * main - Prints possible combos of 3 digits.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int i, k, l;
-	
-	i = 48;
-	k = 48;
-	l = 48;
+	int i, j, k;
 
-	while (k < 58)
+	i = 48;
+	j = 48;
+	k = 48;
+
+	while (j < 58)
 	{
 		i = 48;
 		while (i < 58)
 		{
-			l = 48;
-			while (l < 58)
+			k = 48;
+			while (k < 58)
 			{
-				if (k != i && k != l && i != l && k < i && i < l)
+				if (j != i && j != k && i != k && j < i && i < k)
 				{
-					putchar(k);
+					putchar(j);
 					putchar(i);
-					putchar(l);
-					if (i == 56 && l == 57)
+					putchar(k);
+					if (i == 56 && j == 55 && k == 57)
 					{
 						break;
 					}
 					putchar(',');
 					putchar(' ');
 				}
-				l++;
+				k++;
 			}
 			i++;
 		}
-		k++;
+		j++;
 	}
 	putchar('\n');
 	return (0);

@@ -19,7 +19,7 @@ int main(void)
 		{
 			if (k != i && k < i)
 			{
-				putchar(e);
+				putchar(k);
 				putchar(i);
 				if (i == 57 && e == 56)
 				{
