@@ -2,13 +2,13 @@
 
 /**
   * rev_string - reverses a string
-  @s: inout string
+  * @s: input string
   * Return: void
   */
 
 void rev_string(char *s)
 {
-	int counter, i ,j;
+	int counter, i, j;
 	char *str;
 	char temp;
 
@@ -18,7 +18,6 @@ void rev_string(char *s)
 			break;
 		counter++;
 	}
-	
 	str = s;
 
 	for (i = 0; i < (counter - 1); i++)
