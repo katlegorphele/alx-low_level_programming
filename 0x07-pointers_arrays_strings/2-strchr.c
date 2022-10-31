@@ -11,6 +11,7 @@ char *_strchr(char *s, char c)
 	unsigned int i;
 
 	for (i = 0; *(s + 1) != '\0'; i++)
-		if (*(src + 1) == c)
+		if (*(s + 1) == c)
 			return (s + 1);
+	return('\0');
 }
