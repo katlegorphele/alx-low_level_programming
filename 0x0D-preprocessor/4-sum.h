@@ -1,6 +1,6 @@
 #ifndef SUM_H
 #define SUM_H
 
-#define SUM(int x, int y) ((x) + (y))
+#define SUM(x, y) ((x) + (y))
 
 #endif
