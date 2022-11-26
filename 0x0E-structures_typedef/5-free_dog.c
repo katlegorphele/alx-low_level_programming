@@ -2,6 +2,9 @@
 #include <stdlib.h>
 
 /**
+  * free_dog - frees dogs from memory
+  * @d: dog struct
+  * Return: void
   */
 
 void free_dog(dog_t *d)
