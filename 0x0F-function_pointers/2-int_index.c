@@ -1,7 +1,13 @@
 #include "function_pointers.h"
 
 /**
-  * int_index - 
+  * int_index - searches for int
+  * @array: integer array
+  * @size: size of array
+  * @cmp: pointer to function to be used to check values
+  *
+  * Return: index of first element where cmp does not
+  * return 0. If no matches return -1. If size <= 0 return -1.
   */
 
 int int_index(int *array, int size, int (*cmp)(int))
