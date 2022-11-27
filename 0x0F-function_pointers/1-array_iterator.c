@@ -6,7 +6,7 @@
   * on each element of array
   * @array: inout integer array
   * @size: size of the array
-  @action: pointer to function
+  * @action: pointer to function
   *
   * Return: void
   */
