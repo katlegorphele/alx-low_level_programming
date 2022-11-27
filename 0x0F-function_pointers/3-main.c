@@ -1,6 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 /**
   * main - test file
@@ -12,21 +12,20 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b, c;
+	int a, b;
 	int (*operation)(int, int);
 
-	/* checks argument count*/
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
-	}  
+	}
 
 	if (argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
-	} 
+	}
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
@@ -38,12 +37,8 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(99);
-	} 
+	}
 
-/*	a = atoi(argv[1]);
-	b = atoi(argv[3]); */
-	c = (*operation)(a, b);
-
-	printf("%d\n",c);
+	printf("%d\n", (*operation)(a, b));
 	return (0);
 }
