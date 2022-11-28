@@ -5,7 +5,9 @@
   * print_strings - prints input string
   * @seperator: string seperator
   * @n: number of strings
-  */
+  *
+  * Return: void
+ */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -13,14 +15,22 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_list valist;
 	unsigned int i;
+	char *str;
 
 	va_start(valist, n);
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(valist, int));
-		if (separator && i < n - 1)
-			printf("%s", separator);
+		str = va_arg(valist, char *);
+
+		if (str)
+			printf("%s", str);
+		else
+			printf("(nil)");
+
+		if (i < n - 1)
+			if (separator)
+				printf("%s", separator);
 	}
 
 	printf("\n");
