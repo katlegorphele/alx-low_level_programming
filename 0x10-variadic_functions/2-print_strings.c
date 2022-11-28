@@ -3,7 +3,7 @@
 
 /**
   * print_strings - prints input string
-  * @seperator: string seperator
+  * @separator: string seperator
   * @n: number of strings
   *
   * Return: void
